@@ -1,10 +1,11 @@
 <aura:component >
 	<aura:attribute name="map" type="Object"/>
-    <aura:handler event="c:AccountsLoaded" action="{!c.accountsLoaded}"/>
-    <aura:handler event="c:AccountSelected" action="{!c.accountSelected}"/>
+    
 	<aura:attribute name="mark" type="Object"></aura:attribute>
     <aura:attribute name="circ" type="Object"></aura:attribute>
 
+
+<!-- Add the path for your static resource-->
     <ltng:require styles="/resource/leaflet/leaflet.css"
         scripts="/resource/leaflet/leaflet.js"
         afterScriptsLoaded="{!c.jsLoaded}" />
